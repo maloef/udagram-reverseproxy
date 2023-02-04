@@ -10,8 +10,8 @@ install:
 before_script:
 
 script:
-    - docker build -t udagram-api-feed .
-    - docker tag udagram-api-feed maloef/udagram-reverseproxy:latest
+    - docker build -t udagram-reverseproxy .
+    - docker tag udagram-reverseproxy maloef/udagram-reverseproxy:latest
 
 after_success:
     - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
