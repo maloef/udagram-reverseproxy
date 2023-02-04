@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: udagram-reverseproxy
-        image: maloef/udagram-reverseproxy
+        image: maloef/udagram-reverseproxy:v1
         imagePullPolicy: Always          
         resources:
           requests:
